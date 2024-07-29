@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Use flexbox on body to center content */
 body {
     background-color: #00008B; /* Dark blue color */
     color: white; /* Makes text white for better readability */
@@ -12,23 +13,28 @@ body {
     display: flex;
     flex-direction: column; /* Stacks header, main, and footer vertically */
     min-height: 100vh; /* Ensures body is at least the height of the viewport */
+    margin: 0; /* Removes default margin */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
 }
 
 header, main, footer {
     padding: 20px;
     width: 100%; /* Ensures sections use the full width of the viewport */
+    max-width: 800px; /* Optional: limits the width for better readability */
+    text-align: center; /* Center-aligns text inside sections */
 }
 
 main {
     flex: 1; /* Allows the main content to grow and fill available space */
 }
 
-/* Add margin to main to push content down */
-main {
-    margin-top: 50px; /* Adjust this value as needed */
+/* Optional: Adjust margins or padding as needed */
+header {
+    margin-bottom: 20px; /* Adjust space below header */
 }
 
 footer {
     background-color: #000055; /* Darker blue for footer background */
-    text-align: center;
+    margin-top: 20px; /* Adjust space above footer */
 }
