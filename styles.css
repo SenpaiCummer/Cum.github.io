@@ -23,6 +23,11 @@ main {
     flex: 1; /* Allows the main content to grow and fill available space */
 }
 
+/* Add margin to main to push content down */
+main {
+    margin-top: 50px; /* Adjust this value as needed */
+}
+
 footer {
     background-color: #000055; /* Darker blue for footer background */
     text-align: center;
