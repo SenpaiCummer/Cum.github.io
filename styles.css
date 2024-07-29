@@ -16,6 +16,7 @@ body {
 
 header, main, footer {
     padding: 20px;
+    width: 100%; /* Ensures sections use the full width of the viewport */
 }
 
 main {
