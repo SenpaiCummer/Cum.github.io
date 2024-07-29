@@ -1,11 +1,17 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #3373B2; /* Dark blue color */
+    background-color: #00008B; /* Dark blue color */
     color: white; /* Makes text white for better readability */
     font-family: Arial, sans-serif; /* Sets a default font */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
     display: flex;
-    flex-direction: column; /* Allows for vertical stacking of content */
+    flex-direction: column; /* Stacks header, main, and footer vertically */
+    min-height: 100vh; /* Ensures body is at least the height of the viewport */
 }
 
 header, main, footer {
@@ -13,7 +19,7 @@ header, main, footer {
 }
 
 main {
-    flex: 1; /* Allows the main content to take up available space */
+    flex: 1; /* Allows the main content to grow and fill available space */
 }
 
 footer {
