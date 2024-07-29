@@ -29,12 +29,14 @@ main {
     flex: 1; /* Allows the main content to grow and fill available space */
 }
 
-/* Optional: Adjust margins or padding as needed */
-header {
-    margin-bottom: 20px; /* Adjust space below header */
-}
-
 footer {
     background-color: #000055; /* Darker blue for footer background */
     margin-top: 20px; /* Adjust space above footer */
+}
+
+/* Optional: Add spacing to push content down */
+body::before {
+    content: ""; /* Empty content */
+    display: block;
+    height: 50px; /* Adjust this height as needed */
 }
