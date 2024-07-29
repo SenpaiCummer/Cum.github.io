@@ -1,0 +1,12 @@
+body {
+    background-color: #00008B; /* Dark blue color */
+    color: white; /* Optional: Makes text white for better readability */
+    font-family: Arial, sans-serif; /* Optional: Sets a default font */
+    margin: 0; /* Optional: Removes default margin */
+    padding: 0; /* Optional: Removes default padding */
+    display: flex; /* Optional: Centers content vertically and horizontally */
+    justify-content: center; /* Optional: Centers content horizontally */
+    align-items: center; /* Optional: Centers content vertically */
+    height: 100vh; /* Optional: Sets height to full viewport height */
+    text-align: center; /* Optional: Centers text */
+}
