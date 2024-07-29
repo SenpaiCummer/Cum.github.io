@@ -1,12 +1,22 @@
 body {
     background-color: #3373B2; /* Dark blue color */
-    color: white; /* Optional: Makes text white for better readability */
-    font-family: Arial, sans-serif; /* Optional: Sets a default font */
-    margin: 0; /* Optional: Removes default margin */
-    padding: 0; /* Optional: Removes default padding */
-    display: flex; /* Optional: Centers content vertically and horizontally */
-    justify-content: center; /* Optional: Centers content horizontally */
-    align-items: center; /* Optional: Centers content vertically */
-    height: 100vh; /* Optional: Sets height to full viewport height */
-    text-align: center; /* Optional: Centers text */
+    color: white; /* Makes text white for better readability */
+    font-family: Arial, sans-serif; /* Sets a default font */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex;
+    flex-direction: column; /* Allows for vertical stacking of content */
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+main {
+    flex: 1; /* Allows the main content to take up available space */
+}
+
+footer {
+    background-color: #000055; /* Darker blue for footer background */
+    text-align: center;
 }
