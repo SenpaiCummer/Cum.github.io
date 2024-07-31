@@ -5,19 +5,24 @@
     box-sizing: border-box;
 }
 
-/* Use flexbox on body to center content */
+/* Flexbox setup for body to center content */
+html, body {
+    height: 100%; /* Ensure full height for the body */
+    margin: 0; /* Remove default margin */
+}
+
 body {
     background-color: #00008B; /* Dark blue color */
     color: white; /* Makes text white for better readability */
     font-family: Arial, sans-serif; /* Sets a default font */
     display: flex;
     flex-direction: column; /* Stacks header, main, and footer vertically */
-    min-height: 100vh; /* Ensures body is at least the height of the viewport */
-    margin: 0; /* Removes default margin */
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
+    min-height: 100vh; /* Ensures body is at least the height of the viewport */
 }
 
+/* Styling for the header, main, and footer */
 header, main, footer {
     padding: 20px;
     width: 100%; /* Ensures sections use the full width of the viewport */
@@ -29,14 +34,23 @@ main {
     flex: 1; /* Allows the main content to grow and fill available space */
 }
 
+/* Optional: Space above and below footer */
 footer {
     background-color: #000055; /* Darker blue for footer background */
-    margin-top: 20px; /* Adjust space above footer */
+    margin-top: 20px; /* Space above footer */
 }
 
-/* Optional: Add spacing to push content down */
-body::before {
-    content: ""; /* Empty content */
-    display: block;
-    height: 50px; /* Adjust this height as needed */
+/* Styling for the download link */
+a[download] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0; /* Adjust margin to fit your layout */
+    background-color: #0055FF; /* Background color of the button */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+}
+
+a[download]:hover {
+    background-color: #0044CC; /* Darker background on hover */
 }
