@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-    background-color: #00008B; /* Dark blue color */
+    background-color: #6565ff; /* Dark blue color */
     color: white; /* Makes text white for better readability */
     font-family: Arial, sans-serif; /* Sets a default font */
     display: flex;
@@ -45,12 +45,12 @@ a[download] {
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0; /* Adjust margin to fit your layout */
-    background-color: #0055FF; /* Background color of the button */
+    background-color: #000000; /* Background color of the button */
     color: white; /* Text color */
     text-decoration: none; /* Remove underline from the link */
     border-radius: 5px; /* Rounded corners */
 }
 
 a[download]:hover {
-    background-color: #0044CC; /* Darker background on hover */
+    background-color: #ffffff; /* Darker background on hover */
 }
